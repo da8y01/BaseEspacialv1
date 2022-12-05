@@ -1,6 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+double CalculateDistance(double x, double y) => Math.Sqrt(x*x + y*y);
+
 app.MapGet("/", () => "Hello World!");
 app.MapGet("/greet/{name}", (string name) => Helper.GreetName(name));
 
