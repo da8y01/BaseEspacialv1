@@ -9,9 +9,11 @@ A pesar de que se tuvieron en cuenta el Teorema de Pitágoras, la distancia entr
 
 ### Correr el programa
 * Usando Visual Studio 2022, con el menú Debug opción Start Without Debugging, o con la combinación de teclas ctrl + f5 .
+
 ![RunVS2022](RunVS2022.png)
 
 * Usando una terminal de comandos, estando en el directorio de la aplicación con el comando: `dotnet run`
+
 ![RunTerminal](RunTerminal.png)
 
 La aplicación está basada en el siguiente tutorial: [Tutorial: Create a minimal web API with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0&tabs=visual-studio-code)
