@@ -1,4 +1,5 @@
 # BaseEspacialv1
+
 Prueba técnica Base Espacial.
 
 URL de código fuente: [https://github.com/da8y01/BaseEspacialv1](https://github.com/da8y01/BaseEspacialv1)
@@ -15,6 +16,43 @@ A pesar de que se tuvieron en cuenta el Teorema de Pitágoras, la distancia entr
 * Usando una terminal de comandos, estando en el directorio de la aplicación con el comando: `dotnet run`
 
 ![RunTerminal](RunTerminal.png)
+
+### Ejemplos de requests a rutas de web application:
+
+#### POST a ruta `/topsecret`:
+
+Request:
+```
+[
+{
+    "name": "kenobi",
+    "distance": 100.0,
+    "message": ["es", "mensaje"]
+},
+{
+    "distance": 123.4,
+    "message": ["es", "mensaje"]
+}
+]
+```
+
+Response: `Hello SatelliteReception[]!`
+
+![PostPath1](PostPath1.png)
+
+#### POST a ruta `/topsecret_split/{satellite_name}`:
+
+Request:
+```
+{
+    "distance": 123.4,
+    "message": ["es", "mensaje"]
+}
+```
+
+Response: `Hello Reception!`
+
+![PostPath2](PostPath2.png)
 
 La aplicación está basada en el siguiente tutorial: [Tutorial: Create a minimal web API with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0&tabs=visual-studio-code)
 
